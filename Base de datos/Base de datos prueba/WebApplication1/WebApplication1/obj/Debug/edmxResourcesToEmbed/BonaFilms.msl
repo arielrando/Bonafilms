@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BonaFilmsModelStoreContainer" CdmEntityContainer="BonaFilmsEntities">
+    <EntitySetMapping Name="Peliculas">
+      <EntityTypeMapping TypeName="BonaFilmsModel.Peliculas">
+        <MappingFragment StoreEntitySet="Peliculas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Disponibilidad" ColumnName="Disponibilidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
