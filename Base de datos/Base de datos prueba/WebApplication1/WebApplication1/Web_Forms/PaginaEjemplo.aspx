@@ -10,19 +10,16 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Button ID="Button1" runat="server" Text="Agregar una pelicula" OnClick="Button1_Click" />
+        <h3>Nombre del genero</h3>
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="Button2" runat="server" Text="Agregar otra pelicula" OnClick="Button2_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Agregar" OnClick="Button1_Click" />
         <br />
-        <asp:Button ID="Button3" runat="server" Text="Mostrar una pelicula" OnClick="Button3_Click" />
-        <asp:Label ID="Label1_1" runat="server" Text=""></asp:Label>
-        <asp:Label ID="Label1_2" runat="server" Text=""></asp:Label>
-        <asp:Label ID="Label1_3" runat="server" Text=""></asp:Label>
+        <asp:Label ID="LabelGeneroVacio" runat="server" Text=""></asp:Label>
         <br />
-        <asp:Button ID="Button4" runat="server" Text="Mostrar otra pelicula" OnClick="Button4_Click" /> 
-        <asp:Label ID="Label2_1" runat="server" Text=""></asp:Label> 
-        <asp:Label ID="Label2_2" runat="server" Text=""></asp:Label> 
-        <asp:Label ID="Label2_3" runat="server" Text=""></asp:Label>
+        
+        <br />
+       
         <br />
     </div>
     </form>

@@ -16,44 +16,30 @@ namespace WebApplication1.Web_Forms
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Clases.ABM p = new Clases.ABM();
-
-            p.Subir1Pelicula();
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Clases.ABM p = new Clases.ABM();
-
-            p.SubirOtraPelicula();
-        }
-
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            using (BonaFilmsEntities context = new BonaFilmsEntities())
+            //primero se verifica que el textbox donde va el nombre del genero
+            //no este vacio, si lo esta, muestra un mensaje en un label
+            if (string.IsNullOrWhiteSpace(TextBox1.Text))
             {
-                Peliculas pelicula = context.Peliculas.FirstOrDefault(r => r.Nombre == "Duro de matar");
-                Label1_1.Text = pelicula.Nombre;
-                Label1_2.Text = pelicula.Año.ToString();
-                Label1_3.Text = pelicula.Cantidad.ToString();
+                LabelGeneroVacio.Text = "No puede agregar un Genero sin nombre ";
             }
-
-
-        }
-
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-           
-
-            using (BonaFilmsEntities context = new BonaFilmsEntities())
+            //si el textbox no esta vacio entonces pone el label vacio, crea una
+            //nueva entidad entities, crea un nuevo objeto genero, le da el nombre
+            //que esta en el textbox y finalmente el intitie lo agrega a la BDD
+            else
             {
-                Peliculas pelicula = context.Peliculas.FirstOrDefault(r => r.Nombre == "El rey leon");
-                Label2_1.Text = pelicula.Nombre;
-                Label2_2.Text = pelicula.Año.ToString();
-                Label2_3.Text = pelicula.Cantidad.ToString();
+                LabelGeneroVacio.Text = "";
+                BonaFilmsEntities1 context = new BonaFilmsEntities1();
+                Genero p = new Genero();
+                p.NombreGen = TextBox1.Text;
+                context.Generos.Add(p);
+                context.SaveChanges();
             }
-
-            
         }
+
+        
+
+       
+
+      
     }
 }

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BonaFilmsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Directores">
+    <Key>
+      <PropertyRef Name="IdDir" />
+    </Key>
+    <Property Name="IdDir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreDir" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApellidoDir" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Generos">
+    <Key>
+      <PropertyRef Name="IdGen" />
+    </Key>
+    <Property Name="IdGen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreGen" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Peliculas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Disponibilidad" Type="bit" Nullable="false" />
+    <Property Name="Año" Type="int" />
+    <Property Name="Genero" Type="int" Nullable="false" />
+    <Property Name="Director" Type="int" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Peliculas__Direc__4AB81AF0">
+    <End Role="Directores" Type="Self.Directores" Multiplicity="0..1" />
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Directores">
+        <PropertyRef Name="IdDir" />
+      </Principal>
+      <Dependent Role="Peliculas">
+        <PropertyRef Name="Director" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Peliculas__Gener__49C3F6B7">
+    <End Role="Generos" Type="Self.Generos" Multiplicity="1" />
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Generos">
+        <PropertyRef Name="IdGen" />
+      </Principal>
+      <Dependent Role="Peliculas">
+        <PropertyRef Name="Genero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BonaFilmsModelStoreContainer">
+    <EntitySet Name="Directores" EntityType="Self.Directores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Generos" EntityType="Self.Generos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Peliculas" EntityType="Self.Peliculas" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Peliculas__Direc__4AB81AF0" Association="Self.FK__Peliculas__Direc__4AB81AF0">
+      <End Role="Directores" EntitySet="Directores" />
+      <End Role="Peliculas" EntitySet="Peliculas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Peliculas__Gener__49C3F6B7" Association="Self.FK__Peliculas__Gener__49C3F6B7">
+      <End Role="Generos" EntitySet="Generos" />
+      <End Role="Peliculas" EntitySet="Peliculas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
