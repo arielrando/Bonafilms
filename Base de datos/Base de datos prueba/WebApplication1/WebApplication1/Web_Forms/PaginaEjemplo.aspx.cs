@@ -11,7 +11,17 @@ namespace WebApplication1.Web_Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            BonaFilmsEntities1 context = new BonaFilmsEntities1();
 
+            var g = from c in context.Generos
+                               orderby c.NombreGen
+                               select new { c.IdGen, c.NombreGen };
+            DropDownList1.DataValueField = "IdGen";
+            DropDownList1.DataTextField = "NombreGen";
+            DropDownList1.DataSource = g.ToList();
+            DataBind();
+
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -35,6 +45,8 @@ namespace WebApplication1.Web_Forms
                 context.SaveChanges();
             }
         }
+
+
 
         
 
