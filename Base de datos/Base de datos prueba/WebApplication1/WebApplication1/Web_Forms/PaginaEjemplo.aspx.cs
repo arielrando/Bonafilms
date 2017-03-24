@@ -11,16 +11,20 @@ namespace WebApplication1.Web_Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BonaFilmsEntities1 context = new BonaFilmsEntities1();
+            if (!IsPostBack)
+            {
+                BonaFilmsEntities1 context = new BonaFilmsEntities1();
 
-            var g = from c in context.Generos
-                               orderby c.NombreGen
-                               select new { c.IdGen, c.NombreGen };
-            DropDownList1.DataValueField = "IdGen";
-            DropDownList1.DataTextField = "NombreGen";
-            DropDownList1.DataSource = g.ToList();
-            DataBind();
+                var g = from c in context.Generos
+                        orderby c.NombreGen
+                        select new { c.IdGen, c.NombreGen };
+                DropDownList1.DataValueField = "IdGen";
+                DropDownList1.DataTextField = "NombreGen";
+                DropDownList1.DataSource = g.ToList();
 
+                DataBind();
+            }
+           
             
         }
 
@@ -49,8 +53,10 @@ namespace WebApplication1.Web_Forms
 
 
         
-
-       
+protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Label1.Text = " El ID del genero es " + DropDownList1.SelectedItem.Value.ToString() + " y el nombre es " + DropDownList1.SelectedItem.Text.ToString();
+        }
 
       
     }

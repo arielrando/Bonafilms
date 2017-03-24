@@ -17,12 +17,13 @@
         <br />
         <asp:Label ID="LabelGeneroVacio" runat="server" Text=""></asp:Label>
         <br />
-        
+        <h3>Elija un Genero para ver su informacion</h3>
         <br />
-        <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
-        
+        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true" ></asp:DropDownList>
         <br />
-
+        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+        <br />
+        
     </div>
     </form>
 </body>
