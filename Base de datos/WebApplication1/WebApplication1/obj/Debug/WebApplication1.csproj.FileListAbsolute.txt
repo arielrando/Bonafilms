@@ -1,0 +1,36 @@
+C:\Users\desarrollo\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\desarrollo\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\desarrollo\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\desarrollo\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\desarrollo\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\desarrollo\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\G.R\Desktop\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\G.R\Documents\GitHub\Bonafilms\Base de datos\Base de datos prueba\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
