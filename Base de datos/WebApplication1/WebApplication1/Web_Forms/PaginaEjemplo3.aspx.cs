@@ -194,5 +194,43 @@ namespace WebApplication1.Web_Forms
 
             Response.Redirect("/Web_Forms/Modificar.aspx" + barcode);
         }
+
+        protected void Button1_1_Click(object sender, EventArgs e)
+        {
+            string n = TextBox1.Text;
+            int a = Convert.ToInt32(TextBox1_1.Text);
+            int g  = Convert.ToInt32(DropDownListGenero.SelectedItem.Value);
+            int d = Convert.ToInt32(DropDownListDirector.SelectedItem.Value);
+            int c = Convert.ToInt32(TextBox1_2.Text);
+
+            Clases.ABM abm = new Clases.ABM();
+
+            abm.a(n, a, g, d, c);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void Button3_2_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(DropDownList1.SelectedItem.Value);
+            string n = TextBox2.Text;
+            int a = Convert.ToInt32(TextBox2_1.Text);
+            int g = Convert.ToInt32(DropDownList2.SelectedItem.Value);
+            int d = Convert.ToInt32(DropDownList2_1.SelectedItem.Value);
+            int c = Convert.ToInt32(TextBox2_2.Text);
+
+            Clases.ABM abm = new Clases.ABM();
+
+            abm.m(id, n, a, g, d, c);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void Button2_2_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(DropDownList1.SelectedItem.Value);
+            Clases.ABM abm = new Clases.ABM();
+
+            abm.b(id);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }

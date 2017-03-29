@@ -76,6 +76,15 @@ namespace WebApplication1.Web_Forms {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
+        /// Control Button1_1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1_1;
+        
+        /// <summary>
         /// Control LabelDirector1Vacio.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,15 @@ namespace WebApplication1.Web_Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2_1;
+        
+        /// <summary>
+        /// Control Button2_2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2_2;
         
         /// <summary>
         /// Control TextBox2.
@@ -182,6 +200,15 @@ namespace WebApplication1.Web_Forms {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3_1;
+        
+        /// <summary>
+        /// Control Button3_2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button3_2;
         
         /// <summary>
         /// Control LabelGeneroVacio2.

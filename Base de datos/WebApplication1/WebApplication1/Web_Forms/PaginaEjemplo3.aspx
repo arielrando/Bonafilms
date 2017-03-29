@@ -27,6 +27,8 @@
             <br />
             <asp:Button ID="Button1" runat="server" Text="Agregar" OnClick="Button1_Click" />
             <br />
+            <asp:Button ID="Button1_1" runat="server" Text="Agregar por metodo" OnClick="Button1_1_Click" />
+            <br />
             <asp:Label ID="LabelDirector1Vacio" runat="server" Text=""></asp:Label>
             <br />
             <h3>Elija una pelicula para ver su informacion</h3>
@@ -35,11 +37,19 @@
             <br />
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             <br />
+            <h1>Peliculas</h1>
             <h3>Eliminar director</h3>
             <br />
             <asp:Button ID="Button2" runat="server" Text="Borrar genero elegido (1)" OnClick="Button2_Click" />
             <br />
             <asp:Button ID="Button2_1" runat="server" Text="Borrar genero elegido (2)" OnClick="Button2_1_Click" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="Button2_2" runat="server" Text="Borrar pelicula elegida por metodo" OnClick="Button2_2_Click" /> 
             <br />
             <h3>Ingrese un nuevo Nombre de la pelicula</h3>
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
@@ -59,6 +69,8 @@
             <asp:Button ID="Button3" runat="server" Text="Modificar pelicula elegida (1)" OnClick="Button3_Click" />
             <br />
             <asp:Button ID="Button3_1" runat="server" Text="Modificar pelicula elegida (2)" OnClick="Button3_1_Click" />
+            <br />
+            <asp:Button ID="Button3_2" runat="server" Text="Modificar pelicula elegida por metodo" OnClick="Button3_2_Click" />
             <br />
             <asp:Label ID="LabelGeneroVacio2" runat="server" Text=""></asp:Label>
             <br />
