@@ -34,3 +34,13 @@ C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\bin\EntityFra
 C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\G.R\Desktop\Nueva carpeta\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Marian\Documents\GitHub\Bonafilms\Base de datos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

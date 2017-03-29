@@ -107,17 +107,17 @@ namespace WebApplication1.Web_Forms
             n = Convert.ToInt32(DropDownList1.SelectedItem.Value);
             BonaFilmsEntities1 context = new BonaFilmsEntities1();
             Pelicula p = context.Peliculas.FirstOrDefault(r => r.Id == n);
-            Label1.Text = " El ID de la pelicula es " + p.Id.ToString() + 
-                ", el nombre es " + p.Nombre.ToString() + ", el año es " 
-                + p.Año.ToString() + ", la cantidad es " + p.Cantidad.ToString() 
+            Label1.Text = " El ID de la pelicula es " + p.Id.ToString() +
+                ", el nombre es " + p.Nombre.ToString() + ", el año es "
+                + p.Año.ToString() + ", la cantidad es " + p.Cantidad.ToString()
                 + " y su disponibilidad es " + p.Disponibilidad.ToString();
             TextBox2.Text = p.Nombre.ToString();
             TextBox2_1.Text = p.Año.ToString();
             TextBox2_2.Text = p.Cantidad.ToString();
             DropDownList2.ClearSelection();
-            DropDownList2.Items.FindByValue(p.Genero.ToString()).Selected=true;
+            DropDownList2.Items.FindByValue(p.Genero.ToString()).Selected = true;
             DropDownList2_1.ClearSelection();
-            DropDownList2_1.Items.FindByValue(p.Director.ToString()).Selected =true;
+            DropDownList2_1.Items.FindByValue(p.Director.ToString()).Selected = true;
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -184,6 +184,15 @@ namespace WebApplication1.Web_Forms
                 context.SaveChanges();
                 Response.Redirect(Request.RawUrl);
             }
+        }
+
+        protected void Grind_modificar(object sender, EventArgs e)
+        {
+            LinkButton re = (LinkButton)sender;
+            GridViewRow selectedRow = (GridViewRow)re.NamingContainer;
+            string barcode = "?Id=" + selectedRow.Cells[2].Text;
+
+            Response.Redirect("/Web_Forms/Modificar.aspx" + barcode);
         }
     }
 }
