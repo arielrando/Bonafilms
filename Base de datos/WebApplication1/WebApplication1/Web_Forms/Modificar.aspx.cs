@@ -54,7 +54,7 @@ namespace WebApplication1.Web_Forms
                 DropDownList1.SelectedItem.Value = Convert.ToString(p.Director);
                 cambiarCantidad.Text = Convert.ToString(p.Cantidad);
             }
-            
+
 
         }
         protected void Button1_Click(object sender, EventArgs e)
@@ -73,7 +73,12 @@ namespace WebApplication1.Web_Forms
             p.Director = Convert.ToInt32(DropDownList1.SelectedItem.Value);
             p.Cantidad = Convert.ToInt32(cambiarCantidad.Text);
             context.SaveChanges();
-            Response.Redirect("/Web_Forms/PaginaEjemplo3.aspx");
+            Response.Redirect("Inicio.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
         }
     }
 }
