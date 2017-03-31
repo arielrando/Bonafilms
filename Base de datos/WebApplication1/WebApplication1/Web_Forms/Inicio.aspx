@@ -11,8 +11,12 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Lista" runat="server">
 
+   
     <div class="container  text-center  texto">
         <form runat="server">
+             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <br />
+    <asp:Button ID="ButtonBuscar" runat="server" Text="buscar" OnClick="ButtonBuscar_Click" />
             <div>
                 <center>
                 <asp:GridView ID="GridView1" runat="server">

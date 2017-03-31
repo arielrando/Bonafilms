@@ -17,11 +17,14 @@ namespace Masters
                 BonaFilmsEntities1 context = new BonaFilmsEntities1();
 
                 var h = from c in context.Peliculas
+                        join v in context.Generos on c.Genero equals v.IdGen
+                        join b in context.Directores on c.Director equals b.IdDir
                         orderby c.Nombre
-                        select new { c.Id, c.Nombre, c.Año, c.Genero, c.Director, c.Disponibilidad, c.Cantidad };
+                        select new {codigo = c.Id ,titulo = c.Nombre, c.Año, genero = v.NombreGen, director= b.NombreDir, disponible = c.Disponibilidad, cantidad= c.Cantidad };
 
                 GridView1.DataSource = h.ToList();
                 GridView1.DataBind();
+                
             }
         }
 
@@ -52,6 +55,13 @@ namespace Masters
             context.Peliculas.Remove(pelicula);
             context.SaveChanges();
             Response.Redirect(Request.RawUrl);
+        }
+
+        protected void ButtonBuscar_Click(object sender, EventArgs e)
+        {
+            string qs = "?nombre=" + TextBox1.Text;
+
+            Response.Redirect("/Web_Forms/Resultado.aspx" + qs);
         }
     }
 }

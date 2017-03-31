@@ -25,8 +25,6 @@ namespace WebApplication1.Web_Forms
                         where c.NombreGen.Contains(n)
                         select new { c.IdGen, c.NombreGen };
 
-                
-
                 GridView1.DataSource = g.ToList();
                 GridView1.DataBind();
 

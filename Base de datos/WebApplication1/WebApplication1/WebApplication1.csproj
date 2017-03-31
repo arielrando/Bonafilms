@@ -104,6 +104,7 @@
     <Content Include="Web_Forms\PaginaEjemplo3.aspx" />
     <Content Include="Web_Forms\PaginaEjemploBuscador.aspx" />
     <Content Include="Web_Forms\PaginaEjemploResultado.aspx" />
+    <Content Include="Web_Forms\Resultado.aspx" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -211,6 +212,13 @@
     </Compile>
     <Compile Include="Web_Forms\PaginaEjemploResultado.aspx.designer.cs">
       <DependentUpon>PaginaEjemploResultado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Forms\Resultado.aspx.cs">
+      <DependentUpon>Resultado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Forms\Resultado.aspx.designer.cs">
+      <DependentUpon>Resultado.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
