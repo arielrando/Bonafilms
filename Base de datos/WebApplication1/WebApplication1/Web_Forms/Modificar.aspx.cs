@@ -23,22 +23,10 @@ namespace WebApplication1.Web_Forms
                         orderby c.NombreGen
                         select new { c.IdGen, c.NombreGen };
 
-
-
                 DropDownList1.DataValueField = "IdDir";
                 DropDownList1.DataTextField = "NombreDir";
                 DropDownList1.DataSource = g.ToList();
                 DropDownList1.DataBind();
-
-                DropDownList1.DataValueField = "IdDir";
-                DropDownList1.DataTextField = "NombreDir";
-                DropDownList1.DataSource = g.ToList();
-                DropDownList1.DataBind();
-
-                DropDownList2.DataValueField = "IdGen";
-                DropDownList2.DataTextField = "NombreGen";
-                DropDownList2.DataSource = f.ToList();
-                DropDownList2.DataBind();
 
                 DropDownList2.DataValueField = "IdGen";
                 DropDownList2.DataTextField = "NombreGen";

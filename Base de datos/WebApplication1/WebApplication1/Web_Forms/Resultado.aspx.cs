@@ -27,6 +27,13 @@ namespace WebApplication1.Web_Forms
 
                 GridView1.DataSource = g.ToList();
                 GridView1.DataBind();
+
+                for (int r = 0; r < GridView1.Rows.Count; r++)
+                {
+                    GridView1.Rows[r].Cells[2].Visible = false;
+
+                    GridView1.HeaderRow.Cells[2].Visible = false;
+                }
             }
         }
 

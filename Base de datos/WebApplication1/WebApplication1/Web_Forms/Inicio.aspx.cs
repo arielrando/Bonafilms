@@ -20,11 +20,19 @@ namespace Masters
                         join v in context.Generos on c.Genero equals v.IdGen
                         join b in context.Directores on c.Director equals b.IdDir
                         orderby c.Nombre
-                        select new {codigo = c.Id ,titulo = c.Nombre, c.Año, genero = v.NombreGen, director= b.NombreDir, disponible = c.Disponibilidad, cantidad= c.Cantidad };
+                        select new { codigo = c.Id, titulo = c.Nombre, c.Año, genero = v.NombreGen, director = b.NombreDir, disponible = c.Disponibilidad, cantidad = c.Cantidad };
 
                 GridView1.DataSource = h.ToList();
-                GridView1.DataBind();
-                
+                GridView1.DataBind();      
+
+                for (int r = 0; r < GridView1.Rows.Count; r++)
+                {
+                    GridView1.Rows[r].Cells[2].Visible = false;
+
+                    GridView1.HeaderRow.Cells[2].Visible = false;
+                }
+
+
             }
         }
 
