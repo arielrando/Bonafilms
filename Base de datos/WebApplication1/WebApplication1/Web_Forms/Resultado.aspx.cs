@@ -58,14 +58,16 @@ namespace WebApplication1.Web_Forms
         {
             LinkButton re = (LinkButton)sender;
             GridViewRow selectedRow = (GridViewRow)re.NamingContainer;
-            var pelicula = new Pelicula { Id = Convert.ToInt32(selectedRow.Cells[2].Text) };
-            BonaFilmsEntities1 context = new BonaFilmsEntities1();
+            Clases.ABM amb = new Clases.ABM();
+            amb.b(Convert.ToInt32(selectedRow.Cells[2].Text));
+            /* var pelicula = new Pelicula { Id = Convert.ToInt32(selectedRow.Cells[2].Text) };
+             BonaFilmsEntities1 context = new BonaFilmsEntities1();
 
-            //Acá faltaría una validación que pregunte si está seguro que desea eliminar.
+             //Acá faltaría una validación que pregunte si está seguro que desea eliminar.
 
-            context.Peliculas.Attach(pelicula);
-            context.Peliculas.Remove(pelicula);
-            context.SaveChanges();
+             context.Peliculas.Attach(pelicula);
+             context.Peliculas.Remove(pelicula);
+             context.SaveChanges();*/
             Response.Redirect(Request.RawUrl);
         }
 

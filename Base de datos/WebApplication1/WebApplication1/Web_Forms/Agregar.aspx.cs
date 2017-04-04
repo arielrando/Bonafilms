@@ -60,7 +60,7 @@ namespace WebApplication1.Web_Forms
                 {
                     LabelDirector1Vacio.Text = "";
 
-                    BonaFilmsEntities1 context = new BonaFilmsEntities1();
+                    /*BonaFilmsEntities1 context = new BonaFilmsEntities1();
                     Pelicula p = new Pelicula();
                     p.Nombre = TextBox1.Text;
                     p.Año = Convert.ToInt32(TextBox1_1.Text);
@@ -69,7 +69,14 @@ namespace WebApplication1.Web_Forms
                     p.Cantidad = Convert.ToInt32(TextBox1_2.Text);
                     p.Disponibilidad = true;
                     context.Peliculas.Add(p);
-                    context.SaveChanges();
+                    context.SaveChanges();*/
+                    string nom = TextBox1.Text;
+                    int año = Convert.ToInt32(TextBox1_1.Text);
+                    int gen = Convert.ToInt32(DropDownListGenero.SelectedItem.Value);
+                    int dir = Convert.ToInt32(DropDownListDirector.SelectedItem.Value);
+                    int can = Convert.ToInt32(TextBox1_2.Text);
+                    Clases.ABM abm = new Clases.ABM();
+                    abm.a(nom, año, gen, dir, can);
                     Response.Redirect("Inicio.aspx");
                 }
             }
@@ -94,11 +101,13 @@ namespace WebApplication1.Web_Forms
             else
             {
                 LabelGeneroVacio.Text = "";
-                BonaFilmsEntities1 context = new BonaFilmsEntities1();
+                /*BonaFilmsEntities1 context = new BonaFilmsEntities1();
                 Genero p = new Genero();
                 p.NombreGen = nuevoGenero.Text;
                 context.Generos.Add(p);
-                context.SaveChanges();
+                context.SaveChanges();*/
+                Clases.ABMgen ambgen = new Clases.ABMgen();
+                ambgen.a(nuevoGenero.Text);
                 Response.Redirect(Request.RawUrl);
             }
         }
@@ -110,7 +119,7 @@ namespace WebApplication1.Web_Forms
             if (string.IsNullOrWhiteSpace(nuevoDirector.Text))
             {
                 LabelDirectorVacio.Text = "No puede agregar un Director sin nombre ";
-                
+
             }
             //si el textbox no esta vacio entonces pone el label vacio, crea una
             //nueva entidad entities, crea un nuevo objeto genero, le da el nombre
@@ -120,22 +129,23 @@ namespace WebApplication1.Web_Forms
                 if (string.IsNullOrWhiteSpace(nuevoDirector1.Text))
                 {
                     LabelDirectorVacio.Text = "No puede agregar un Director sin apellido ";
-                    
+
                 }
                 else
                 {
                     LabelDirectorVacio.Text = "";
-                    
-                    BonaFilmsEntities1 context = new BonaFilmsEntities1();
-                    Director p = new Director();
-                    p.NombreDir = nuevoDirector.Text;
-                    p.ApellidoDir = nuevoDirector1.Text;
-                    context.Directores.Add(p);
-                    context.SaveChanges();
+
+                    /* BonaFilmsEntities1 context = new BonaFilmsEntities1();
+                     Director p = new Director();
+                     p.NombreDir = nuevoDirector.Text;
+                     p.ApellidoDir = nuevoDirector1.Text;
+                     context.Directores.Add(p);
+                     context.SaveChanges();*/
+                    Clases.ABMdir ambdir = new Clases.ABMdir();
+                    ambdir.a(nuevoDirector.Text, nuevoDirector1.Text);
                     Response.Redirect(Request.RawUrl);
                 }
             }
         }
-
     }
 }

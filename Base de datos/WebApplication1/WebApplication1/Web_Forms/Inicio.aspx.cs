@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WebApplication1;
 
-namespace Masters
+namespace WebApplication1.Web_Forms
 {
-    public partial class Formulario_web1 : System.Web.UI.Page
+    public partial class Inicio : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,9 +20,9 @@ namespace Masters
                         join b in context.Directores on c.Director equals b.IdDir
                         orderby c.Nombre
                         select new { codigo = c.Id, titulo = c.Nombre, c.Año, genero = v.NombreGen, director = b.NombreDir, disponible = c.Disponibilidad, cantidad = c.Cantidad };
-                
+
                 GridView1.DataSource = h.ToList();
-                GridView1.DataBind();      
+                GridView1.DataBind();
 
                 for (int r = 0; r < GridView1.Rows.Count; r++)
                 {
@@ -54,18 +53,20 @@ namespace Masters
             Response.Redirect("Modificar.aspx" + barcode);
         }
 
-        protected void Grind_eliminar (object sender, EventArgs e)
+        protected void Grind_eliminar(object sender, EventArgs e)
         {
             LinkButton re = (LinkButton)sender;
             GridViewRow selectedRow = (GridViewRow)re.NamingContainer;
-            var pelicula = new Pelicula { Id = Convert.ToInt32(selectedRow.Cells[2].Text) };
-            BonaFilmsEntities1 context = new BonaFilmsEntities1();
-            
-            //Acá faltaría una validación que pregunte si está seguro que desea eliminar.
+            Clases.ABM amb = new Clases.ABM();
+            amb.b(Convert.ToInt32(selectedRow.Cells[2].Text));
+            /* var pelicula = new Pelicula { Id = Convert.ToInt32(selectedRow.Cells[2].Text) };
+             BonaFilmsEntities1 context = new BonaFilmsEntities1();
 
-            context.Peliculas.Attach(pelicula);
-            context.Peliculas.Remove(pelicula);
-            context.SaveChanges();
+             //Acá faltaría una validación que pregunte si está seguro que desea eliminar.
+
+             context.Peliculas.Attach(pelicula);
+             context.Peliculas.Remove(pelicula);
+             context.SaveChanges();*/
             Response.Redirect(Request.RawUrl);
         }
 

@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Masters {
+namespace WebApplication1.Web_Forms {
     
     
-    public partial class Formulario_web1 {
+    public partial class Inicio {
         
         /// <summary>
         /// Control TextBox1.

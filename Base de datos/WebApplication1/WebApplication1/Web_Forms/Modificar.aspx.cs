@@ -47,20 +47,23 @@ namespace WebApplication1.Web_Forms
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-
             int n;
             n = Convert.ToInt32(Request.QueryString["Id"]);
-
-
-            BonaFilmsEntities1 context = new BonaFilmsEntities1();
+            string nom = cambioNombre.Text;
+            int año = Convert.ToInt32(cambioAnio.Text);
+            int gen = Convert.ToInt32(DropDownList2.SelectedItem.Value);
+            int dir = Convert.ToInt32(DropDownList1.SelectedItem.Value);
+            int can = Convert.ToInt32(cambiarCantidad.Text);
+            Clases.ABM amb = new Clases.ABM();
+            amb.m(n, nom, año, gen, dir, can);
+            /*BonaFilmsEntities1 context = new BonaFilmsEntities1();
             Pelicula p = context.Peliculas.FirstOrDefault(r => r.Id == n);
             p.Nombre = cambioNombre.Text;
             p.Año = Convert.ToInt32(cambioAnio.Text);
             p.Genero = Convert.ToInt32(DropDownList2.SelectedItem.Value);
             p.Director = Convert.ToInt32(DropDownList1.SelectedItem.Value);
             p.Cantidad = Convert.ToInt32(cambiarCantidad.Text);
-            context.SaveChanges();
+            context.SaveChanges();*/
             Response.Redirect("Inicio.aspx");
         }
 
