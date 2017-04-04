@@ -21,7 +21,7 @@ namespace Masters
                         join b in context.Directores on c.Director equals b.IdDir
                         orderby c.Nombre
                         select new { codigo = c.Id, titulo = c.Nombre, c.Año, genero = v.NombreGen, director = b.NombreDir, disponible = c.Disponibilidad, cantidad = c.Cantidad };
-
+                
                 GridView1.DataSource = h.ToList();
                 GridView1.DataBind();      
 
@@ -32,6 +32,10 @@ namespace Masters
                     GridView1.HeaderRow.Cells[2].Visible = false;
                 }
 
+                if (GridView1.Rows.Count == 0)
+                {
+                    alerta.Text = "No hay registros en la base de datos";
+                }
 
             }
         }
