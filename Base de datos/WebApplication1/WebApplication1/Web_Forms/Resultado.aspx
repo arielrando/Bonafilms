@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true"  CodeBehind="Resultado.aspx.cs" Inherits="WebApplication1.Web_Forms.Resultado" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Resultado.aspx.cs" Inherits="WebApplication1.Web_Forms.Resultado" %>
 
 <asp:Content ID="Contenido" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container  text-center  texto">
@@ -10,14 +10,18 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Lista" runat="server">
 
-   
+
     <div class="container  text-center  texto">
         <form runat="server">
-             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br />
-    <asp:Button ID="ButtonBuscar" runat="server" Text="buscar" OnClick="ButtonBuscar_Click" />
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" OnClick="ButtonBuscar_Click" Class="btn btn-success" />
+            <br />
+            <br />
             <div>
                 <center>
+                <asp:Label ID="palabraClave" runat="server" Text=""></asp:Label>
+                    <br />
+                    <br />
                 <asp:GridView ID="GridView1" runat="server">
                     <Columns>
                         <asp:TemplateField>

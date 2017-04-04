@@ -34,6 +34,9 @@ namespace WebApplication1.Web_Forms
 
                     GridView1.HeaderRow.Cells[2].Visible = false;
                 }
+
+                palabraClave.Text = "Resultados para: " + "'" + n + "'";
+
             }
         }
 

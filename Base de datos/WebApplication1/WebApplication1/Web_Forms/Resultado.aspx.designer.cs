@@ -31,6 +31,15 @@ namespace WebApplication1.Web_Forms {
         protected global::System.Web.UI.WebControls.Button ButtonBuscar;
         
         /// <summary>
+        /// Control palabraClave.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label palabraClave;
+        
+        /// <summary>
         /// Control GridView1.
         /// </summary>
         /// <remarks>
