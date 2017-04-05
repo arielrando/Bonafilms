@@ -31,7 +31,7 @@
                         <asp:TemplateField>
                             <ItemTemplate>
 
-                                <asp:LinkButton ID="botonEliminar" runat="server" OnClick="Grind_eliminar">Eliminar</asp:LinkButton>
+                                <asp:LinkButton ID="botonEliminar" runat="server" OnClick="Grind_eliminar" OnClientClick="return confirm('¿Está seguro que desea eliminar el registro?');">Eliminar</asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>

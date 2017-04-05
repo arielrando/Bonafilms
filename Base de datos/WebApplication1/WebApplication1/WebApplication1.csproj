@@ -78,6 +78,8 @@
     <Content Include="Contenido\css\estilo.css" />
     <Content Include="Contenido\imagenes\favicon.ico" />
     <Content Include="Contenido\imagenes\logo.png" />
+    <Content Include="Web_Forms\AgregarDirector.aspx" />
+    <Content Include="Web_Forms\AgregarGenero.aspx" />
     <Content Include="Web_Forms\Inicio.aspx" />
     <Content Include="Masters.csproj" />
     <Content Include="Masters.csproj.user" />
@@ -132,6 +134,20 @@
     </Compile>
     <Compile Include="Genero.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Forms\AgregarDirector.aspx.cs">
+      <DependentUpon>AgregarDirector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Forms\AgregarDirector.aspx.designer.cs">
+      <DependentUpon>AgregarDirector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Forms\AgregarGenero.aspx.cs">
+      <DependentUpon>AgregarGenero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Forms\AgregarGenero.aspx.designer.cs">
+      <DependentUpon>AgregarGenero.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web_Forms\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
