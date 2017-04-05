@@ -35,6 +35,7 @@ namespace WebApplication1.Web_Forms
 
                 int n;
                 n = Convert.ToInt32(Request.QueryString["Id"]);
+
                 Pelicula p = context.Peliculas.FirstOrDefault(r => r.Id == n);
                 cambioNombre.Text = p.Nombre;
                 cambioAnio.Text = Convert.ToString(p.Año);
@@ -42,34 +43,34 @@ namespace WebApplication1.Web_Forms
                 DropDownList1.SelectedItem.Value = Convert.ToString(p.Director);
                 cambiarCantidad.Text = Convert.ToString(p.Cantidad);
             }
-
-
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+
             int n;
             n = Convert.ToInt32(Request.QueryString["Id"]);
-            string nom = cambioNombre.Text;
-            int año = Convert.ToInt32(cambioAnio.Text);
-            int gen = Convert.ToInt32(DropDownList2.SelectedItem.Value);
-            int dir = Convert.ToInt32(DropDownList1.SelectedItem.Value);
-            int can = Convert.ToInt32(cambiarCantidad.Text);
-            Clases.ABM amb = new Clases.ABM();
-            amb.m(n, nom, año, gen, dir, can);
-            /*BonaFilmsEntities1 context = new BonaFilmsEntities1();
-            Pelicula p = context.Peliculas.FirstOrDefault(r => r.Id == n);
-            p.Nombre = cambioNombre.Text;
-            p.Año = Convert.ToInt32(cambioAnio.Text);
-            p.Genero = Convert.ToInt32(DropDownList2.SelectedItem.Value);
-            p.Director = Convert.ToInt32(DropDownList1.SelectedItem.Value);
-            p.Cantidad = Convert.ToInt32(cambiarCantidad.Text);
-            context.SaveChanges();*/
-            Response.Redirect("Inicio.aspx");
-        }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Inicio.aspx");
+            if (IsValid)
+            {
+
+                string nom = cambioNombre.Text;
+                int año = Convert.ToInt32(cambioAnio.Text);
+                int gen = Convert.ToInt32(DropDownList2.SelectedItem.Value);
+                int dir = Convert.ToInt32(DropDownList1.SelectedItem.Value);
+                int can = Convert.ToInt32(cambiarCantidad.Text);
+                Clases.ABM amb = new Clases.ABM();
+                amb.m(n, nom, año, gen, dir, can);
+                /*BonaFilmsEntities1 context = new BonaFilmsEntities1();
+                Pelicula p = context.Peliculas.FirstOrDefault(r => r.Id == n);
+                p.Nombre = cambioNombre.Text;
+                p.Año = Convert.ToInt32(cambioAnio.Text);
+                p.Genero = Convert.ToInt32(DropDownList2.SelectedItem.Value);
+                p.Director = Convert.ToInt32(DropDownList1.SelectedItem.Value);
+                p.Cantidad = Convert.ToInt32(cambiarCantidad.Text);
+                context.SaveChanges();*/
+                Response.Redirect("Inicio.aspx");
+            }
         }
     }
 }

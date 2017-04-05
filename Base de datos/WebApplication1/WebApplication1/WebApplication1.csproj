@@ -100,12 +100,7 @@
     <Content Include="Scripts\jquery-3.2.0.min.js" />
     <Content Include="Web_Forms\Agregar.aspx" />
     <Content Include="Web_Forms\Modificar.aspx" />
-    <Content Include="Web_Forms\PaginaEjemplo.aspx" />
     <Content Include="packages.config" />
-    <Content Include="Web_Forms\PaginaEjemplo2.aspx" />
-    <Content Include="Web_Forms\PaginaEjemplo3.aspx" />
-    <Content Include="Web_Forms\PaginaEjemploBuscador.aspx" />
-    <Content Include="Web_Forms\PaginaEjemploResultado.aspx" />
     <Content Include="Web_Forms\Resultado.aspx" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -195,41 +190,6 @@
     </Compile>
     <Compile Include="Web_Forms\Modificar.aspx.designer.cs">
       <DependentUpon>Modificar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemplo.aspx.cs">
-      <DependentUpon>PaginaEjemplo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemplo.aspx.designer.cs">
-      <DependentUpon>PaginaEjemplo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemplo2.aspx.cs">
-      <DependentUpon>PaginaEjemplo2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemplo2.aspx.designer.cs">
-      <DependentUpon>PaginaEjemplo2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemplo3.aspx.cs">
-      <DependentUpon>PaginaEjemplo3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemplo3.aspx.designer.cs">
-      <DependentUpon>PaginaEjemplo3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemploBuscador.aspx.cs">
-      <DependentUpon>PaginaEjemploBuscador.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemploBuscador.aspx.designer.cs">
-      <DependentUpon>PaginaEjemploBuscador.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemploResultado.aspx.cs">
-      <DependentUpon>PaginaEjemploResultado.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Forms\PaginaEjemploResultado.aspx.designer.cs">
-      <DependentUpon>PaginaEjemploResultado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web_Forms\Resultado.aspx.cs">
       <DependentUpon>Resultado.aspx</DependentUpon>

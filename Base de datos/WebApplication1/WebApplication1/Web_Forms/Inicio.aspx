@@ -20,7 +20,10 @@
             <br />
             <div>
                 <center>
-<asp:Label ID="alerta" runat="server" Text=""></asp:Label>
+                <asp:Label ID="alerta" runat="server" Text=""></asp:Label>
+
+                <asp:Label ID="labelFecha" runat="server" Text=""></asp:Label>
+
                 <asp:GridView ID="GridView1" runat="server">
                     <Columns>
                         <asp:TemplateField>

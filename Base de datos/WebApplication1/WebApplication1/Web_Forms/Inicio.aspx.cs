@@ -37,6 +37,9 @@ namespace WebApplication1.Web_Forms
                 }
 
             }
+
+            labelFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
         }
 
         protected void AgregarBoton_Click(object sender, EventArgs e)
